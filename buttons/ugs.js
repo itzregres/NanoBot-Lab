@@ -41,7 +41,7 @@ module.exports = {
                         ])
                     await rpg_plugin.write(null,{'user':inter.member.id,'ugs':true});
                     await chn.send({embeds:[ebd],components:[com]});
-                    await inter.editReply({content:`已申請，請靜候管理員回復\n若申請通過，機器人將自動傳送邀請連結`,ephemeral:true})
+                    await inter.editReply({content:`已申請，請靜候女僕回復\n若申請通過，機器人將自動傳送邀請連結（私訊）`,ephemeral:true})
                 })
         }else{
             await inter.editReply({content:'等級尚未達到5，請再加把勁!'});

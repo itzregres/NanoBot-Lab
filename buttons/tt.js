@@ -15,7 +15,7 @@ module.exports = {
             .then(async mem=>{
                 await mem.createDM()
                     .then(async chn=>{
-                        await chn.send('因為有人舉報且經管理員核實，已決議禁言您')
+                        await chn.send('因為有人舉報且經女僕核實，已決議禁言您')
                     })
             await inter.reply({content:'已禁言',ephemeral:true})
             await inter.message.edit({content:`執行者：<@${inter.member.id}>\n執行項目：禁言`,embeds:inter.message.embeds})
